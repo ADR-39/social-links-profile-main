@@ -114,3 +114,9 @@ h1 {
     padding-top: 12px;
     padding-bottom: 12px;
 }
+
+.account-box:hover {
+    color: var(--grey-800-color);
+    background-color: var(--green-color);
+    cursor: pointer;
+}
