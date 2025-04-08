@@ -1,0 +1,116 @@
+/* inter-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/fonts/static/Inter-Regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* inter-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url('assets/fonts/static/Inter-SemiBold.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* inter-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('assets/fonts/static/Inter-Bold.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+.attribution {
+    display: none;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    /* custom color variable */
+    --green-color: hsl(75, 94%, 57%);
+    --white-color: hsl(0, 0%, 100%);
+    --grey-700-color: hsl(0, 0.00%, 20.00%);
+    --grey-800-color: hsl(0, 0%, 12%);
+    --grey-900-color: hsl(0, 0%, 8%);
+
+    /* general stuff */
+    font-family: 'Inter', sans-serif;
+}
+
+.screen-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--grey-900-color);
+}
+
+.avatar-pic {
+    width: 80px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+}
+
+.card {
+    background: var(--grey-800-color);
+    padding: 36px;
+    border-radius: 12px;
+    min-width: min(calc(100vw - 100px), 280px);
+
+    /* flex */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--white-color);
+}
+
+.name-location {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.location {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--green-color);
+}
+
+.bio {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--white-color);
+}
+
+.account-board {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    width: 100%;
+}
+
+.account-box {
+    font-size: 13px;
+    color: var(--white-color);
+    font-weight: 700;
+    /* TODO: change this */
+    background: var(--grey-700-color);
+    border-radius: 8px;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
